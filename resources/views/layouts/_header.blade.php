@@ -4,7 +4,8 @@
     <a class="navbar-brand " href="{{ url('/') }}">
       LaraBBS
     </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -29,8 +30,8 @@
               {{ Auth::user()->name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="">个人中心</a>
-              <a class="dropdown-item" href="">编辑资料</a>
+              <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">个人中心</a>
+              <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">编辑资料</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" id="logout" href="#">
                 <form action="{{ route('logout') }}" method="POST">
