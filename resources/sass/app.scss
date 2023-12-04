@@ -74,7 +74,7 @@ body {
 }
 
 /* Topic Index Page */
-.topics-index-page, .categories-show-page {
+.topics-index-page, .categories-show-page, .root-page {
   .topic-list {
     .nav > li > a {
       position: relative;
@@ -116,7 +116,7 @@ body {
 }
 
 .simditor-body img {
-  max-width:100%;
+  max-width: 100%;
 }
 
 /* Topic Show Page */
@@ -157,7 +157,7 @@ body {
   }
 
   .badge-secondary {
-    background-color: #EBE8E8!important;
+    background-color: #EBE8E8 !important;
   }
 
   .badge-hint {
